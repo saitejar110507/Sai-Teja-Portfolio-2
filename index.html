@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Teja Rachamalla - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .hobby-icon {
+            transition: all 0.3s ease;
+        }
+        .hobby-icon:hover {
+            transform: scale(1.1);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #3b82f6;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .active::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-blue-600">Sai Teja Rachamalla</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="#home" class="block py-2 nav-link active">Home</a>
+                <a href="#about" class="block py-2 nav-link">About</a>
+                <a href="#skills" class="block py-2 nav-link">Skills</a>
+                <a href="#projects" class="block py-2 nav-link">Projects</a>
+                <a href="#contact" class="block py-2 nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white pt-32 pb-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Sai Teja Rachamalla</h1>
+                <h2 class="text-2xl md:text-3xl font-semibold mb-6">Java Full Stack Developer</h2>
+                <p class="text-lg mb-8">Building scalable web applications with user-friendly interfaces</p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition duration-300">Contact Me</a>
+                    <a href="#projects" class="border-2 border-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-blue-600 transition duration-300">View Projects</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-white bg-opacity-20 flex items-center justify-center">
+                    <div class="w-60 h-60 md:w-72 md:h-72 rounded-full bg-white bg-opacity-30 flex items-center justify-center">
+                        <div class="w-56 h-56 md:w-64 md:h-64 rounded-full bg-white bg-opacity-40 flex items-center justify-center">
+                            <img src="C:\Users\Teja\OneDrive\Desktop\SAI TEJA PHOTO .jpg" alt="Profile" class="w-52 h-52 md:w-56 md:h-56 rounded-full object-cover border-4 border-white">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <h3 class="text-2xl font-semibold mb-4">Career Objective</h3>
+                    <p class="text-lg mb-6 text-gray-700 leading-relaxed">
+                        "Ambitious and highly motivated Java full stack developer with a strong foundation in both front end and back-end technologies. 
+                        Proficient in Java, HTML, CSS, JavaScript and SQL with hands-on experience through various academic projects. 
+                        Adept at developing scalable web applications and creating user-friendly interfaces. 
+                        Demonstrated ability to work in team settings and passionate about leveraging technology to solve real-world problems. 
+                        Eager to contribute to a dynamic development team and drive innovative projects in a professional environment."
+                    </p>
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <h4 class="text-xl font-semibold mb-4">Personal Details</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <i class="fas fa-phone-alt mr-3 text-blue-600"></i>
+                                <span>+91 8919908122</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope mr-3 text-blue-600"></i>
+                                <span>rachamallasaiteja2005@gmail.com</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt mr-3 text-blue-600"></i>
+                                <span>Hyderabad, India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4">Education</h3>
+                    <div class="space-y-6">
+                        <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-blue-600">
+                            <h4 class="text-xl font-medium mb-2">B.Tech</h4>
+                            <p class="text-gray-600 mb-1">Methodist College Of Engineering And Technology</p>
+                            <p class="text-gray-500">2024 - 2028</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-blue-600">
+                            <h4 class="text-xl font-medium mb-2">Intermediate</h4>
+                            <p class="text-gray-600 mb-1">Mahatma Jyothiba Phule Telangana Backward Classes Welfare Residential Educational Institutions Society Kukatpally Boys</p>
+                            <p class="text-gray-500">2023</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-blue-600">
+                            <h4 class="text-xl font-medium mb-2">SSC</h4>
+                            <p class="text-gray-600 mb-1">Sree Vidya Mandir High School</p>
+                            <p class="text-gray-500">2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Skill Card 1 -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="fab fa-html5 text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">HTML</h3>
+                    </div>
+                    <p class="text-gray-600">I can create structured web pages and sites using HTML.</p>
+                </div>
+                
+                <!-- Skill Card 2 -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="fab fa-css3-alt text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">CSS</h3>
+                    </div>
+                    <p class="text-gray-600">Good at presentation, formatting, and layout of HTML documents.</p>
+                </div>
+                
+                <!-- Skill Card 3 -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="fab fa-js-square text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">JavaScript</h3>
+                    </div>
+                    <p class="text-gray-600">JavaScript is a versatile programming language used to create dynamic and interactive elements on websites.</p>
+                </div>
+                
+                <!-- Skill Card 4 -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="fab fa-java text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Java (Core and Advance)</h3>
+                    </div>
+                    <p class="text-gray-600">Java is a robust, object-oriented programming language used for building platform independent applications, with core features focusing on basic syntax and advanced features supporting complex, enterprise-level development.</p>
+                </div>
+                
+                <!-- Skill Card 5 -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="fas fa-database text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">SQL</h3>
+                    </div>
+                    <p class="text-gray-600">SQL (Structured Query Language) is a domain-specific language used for managing and manipulating relational databases.</p>
+                </div>
+                
+                <!-- Skill Card 6 -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="fas fa-leaf text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Spring Boot</h3>
+                    </div>
+                    <p class="text-gray-600">Simplified development of RESTful web services.</p>
+                </div>
+                
+                <!-- Skill Card 7 -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="fab fa-windows text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">OS Installation & Troubleshooting</h3>
+                    </div>
+                    <p class="text-gray-600">Experienced in reinstalling and repairing systems using tools like Windows Media Creation Tool and bootable Linux USBs; software configuration, driver updates, virus removal, and desktop/laptop setup.</p>
+                </div>
+                
+                <!-- Skill Card 8 -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="fas fa-cogs text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Software & Driver Configuration</h3>
+                    </div>
+                    <p class="text-gray-600">Installing and maintaining essential software and ensuring system compatibility.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-gray-50 p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="mb-4">
+                        <div class="w-full h-48 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-laptop-code text-blue-600 text-5xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">E-learning Web App (Prototype)</h3>
+                        <p class="text-gray-600 mb-4">
+                            Developed a responsive e-learning web application prototype with user registration, 
+                            interactive dashboards, and comprehensive course management using HTML, CSS, JavaScript and SQL.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">HTML</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">CSS</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">SQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card bg-gray-50 p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="mb-4">
+                        <div class="w-full h-48 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-user-tie text-blue-600 text-5xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Personal Portfolio Web page</h3>
+                        <p class="text-gray-600 mb-4">
+                            Made a personal portfolio web page to highlight my skills in HTML, CSS, JavaScript. 
+                            Includes about my basic and professional details in public view. It is simple and responsive webpage.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">HTML</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">CSS</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Hobbies & Interests</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <!-- Hobby 1 -->
+                <div class="text-center">
+                    <div class="hobby-icon w-20 h-20 bg-white rounded-full shadow-md flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-book-reader text-blue-600 text-3xl"></i>
+                    </div>
+                    <h3 class="font-medium">Reading Books</h3>
+                </div>
+                
+                <!-- Hobby 2 -->
+                <div class="text-center">
+                    <div class="hobby-icon w-20 h-20 bg-white rounded-full shadow-md flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-biking text-blue-600 text-3xl"></i>
+                    </div>
+                    <h3 class="font-medium">Cycling</h3>
+                </div>
+                
+                <!-- Hobby 3 -->
+                <div class="text-center">
+                    <div class="hobby-icon w-20 h-20 bg-white rounded-full shadow-md flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-search text-blue-600 text-3xl"></i>
+                    </div>
+                    <h3 class="font-medium">Tech Research</h3>
+                </div>
+                
+                <!-- Hobby 4 -->
+                <div class="text-center">
+                    <div class="hobby-icon w-20 h-20 bg-white rounded-full shadow-md flex items-center justify-center mx-auto mb-3">
+                        <i class="fab fa-github text-blue-600 text-3xl"></i>
+                    </div>
+                    <h3 class="font-medium">Open-Source</h3>
+                </div>
+                
+                <!-- Hobby 5 -->
+                <div class="text-center">
+                    <div class="hobby-icon w-20 h-20 bg-white rounded-full shadow-md flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-robot text-blue-600 text-3xl"></i>
+                    </div>
+                    <h3 class="font-medium">AI/ML</h3>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-white p-8 rounded-lg shadow-md max-w-3xl mx-auto text-center">
+                <i class="fas fa-quote-left text-blue-600 text-4xl mb-6 opacity-20"></i>
+                <p class="text-xl italic text-gray-700 mb-6">
+                    "I am constantly striving to improve myself and make corrections along the way, believing that 
+                    each step forward, no matter how small, contributes to personal growth and development."
+                </p>
+                <p class="font-medium">- Sai Teja Rachamalla</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Get In Touch</h2>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone-alt text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Phone</h4>
+                                <p class="text-gray-600">+91 8919908122</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Email</h4>
+                                <p class="text-gray-600">rachamallasaiteja2005@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Location</h4>
+                                <p class="text-gray-600">Hyderabad, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-10">
+                        <h4 class="text-xl font-semibold mb-4">Connect with me</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition duration-300">
+                                <i class="fab fa-linkedin-in text-xl"></i>
+                            </a>
+                            <a href="#" class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition duration-300">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                            <a href="#" class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition duration-300">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                            <a href="#" class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition duration-300">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <form class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Your Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-6">
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Enter subject">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Enter your message"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition duration-300">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-2">Sai Teja Rachamalla</h3>
+                    <p class="text-gray-400">Java Full Stack Developer</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Sai Teja Rachamalla. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                // Close mobile menu if open
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Update active nav link
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+        
+        // Update active nav link on scroll
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY;
+            
+            document.querySelectorAll('section').forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
